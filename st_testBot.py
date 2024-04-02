@@ -11,7 +11,7 @@ if "start_chat" not in st.session_state:
 if "thread_id" not in st.session_state:
     st.session_state.thread_id = None
 
-st.set_page_config(page_title="CatGPT", page_icon=":speech_balloon:")
+st.set_page_config(page_title="로또 블로그 봇", page_icon=":speech_balloon:")
 
 openai.api_key = "sk-insert Your OpenAI API Key"
 
@@ -20,8 +20,8 @@ if st.sidebar.button("Start Chat"):
     thread = client.beta.threads.create()
     st.session_state.thread_id = thread.id
 
-st.title("CatGPT like Chatbot")
-st.write("Meow Meow Meow Meow Meow Meow I am a CyberCat")
+st.title("로또의 블로그 10분만에 만들기")
+st.write("도희의 오픈북 블로그 짱빨리 끝내기 프로젝트")
 
 if st.button("Exit Chat"):
     st.session_state.messages = []  # Clear the chat history
