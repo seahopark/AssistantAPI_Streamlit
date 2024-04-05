@@ -13,7 +13,7 @@ if "thread_id" not in st.session_state:
 
 st.set_page_config(page_title="로또 블로그 봇", page_icon=":speech_balloon:")
 
-openai.api_key = "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"
+openai.api_key = ""
 
 if st.sidebar.button("Start Chat"):
     st.session_state.start_chat = True
